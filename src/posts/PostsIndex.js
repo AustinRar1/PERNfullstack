@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import PostsCreate from 'C:/Users/ajrar/Documents/JavaScriptMay2018/Projects/PERNfullStack/voidStart/voidstart1/src/posts/Postscreate.js';
-import PostTable from 'C:/Users/ajrar/Documents/JavaScriptMay2018/Projects/PERNfullStack/voidStart/voidstart1/src/posts/PostTable.js';
+import PostsCreate from '../posts/Postscreate.js';
+import PostTable from '../posts/PostTable.js';
 import PostEdit from './postedit';
 import '../style/post.css'
 import APIURL from '../helpers/enviroment.js';
