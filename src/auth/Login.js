@@ -16,14 +16,14 @@ class Login extends Component {
         });
     }
     handleSubmit = (event) => {
-        fetch(`${APIURL}1/users/signin`, {
+        fetch(`${APIURL}/users/signin`, {
             method: 'POST',
             body: JSON.stringify({users:this.state}),
             headers: new Headers({
                 'Content-Type':'application/json'
             })
         }).then(
-            (response) => response.json()
+            (res) => res.json()
         ).then((data) => {
             this.props.setToken(data.sessionToken)
         }) 
