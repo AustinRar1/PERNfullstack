@@ -5,7 +5,7 @@ switch (window.location.hostname) {
         APIURL = 'http://localhost:3001'
         break;
     case 'ajr-voidstartclient.herokuapp.com':
-        APIURL = 'https://ajr-voidstart.herokuapp.com/'
+        APIURL = 'https://ajr-voidstart.herokuapp.com'
         break;
     default:
         break;
