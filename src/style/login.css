@@ -37,6 +37,6 @@ button{
     cursor: pointer;
 }
 button:hover{
-    color: green;
+    color: rgb(128, 0, 0);
     background-color: black;
 }

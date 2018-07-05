@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'reactstrap';
 import PostsCreate from '../posts/Postscreate.js';
 import PostTable from '../posts/PostTable.js';
 import PostEdit from './postedit';
-import '../style/post.css'
 import APIURL from '../helpers/enviroment.js';
 class PostsIndex extends Component{
     constructor(props){
@@ -63,7 +62,7 @@ class PostsIndex extends Component{
     render(){
         const post = this.state.post.length >= 1 ? 
       <PostTable post={this.state.post}
-       delete={this.deletePosts} update={this.setUserPost} /> : <h2>Log a workout to see table</h2>
+       delete={this.deletePosts} update={this.setUserPost} /> : <h2>You have no posts yet!</h2>
         return (
             <div>
                 <Container>
@@ -72,7 +71,8 @@ class PostsIndex extends Component{
                         <PostsCreate token={this.props.token} updatePostsArray={this.fetchPosts}/>
                         </Col>
                             <Col md="9">
-                                <h2>Log a forum to see table</h2>
+                                <h3>Share assets, ideas, news, or even an engine!</h3>
+                                <br/>
                                 {post}
                             </Col>
                     </Row>

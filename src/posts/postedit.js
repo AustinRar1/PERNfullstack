@@ -36,8 +36,7 @@ class PostEdit extends React.Component {
                 <ModalBody>
                     <Form onSubmit={this.handleSubmit} >
                         <FormGroup>
-                            <Label for="item">Notes</Label>
-                            <Input id="item" type="textarea" name="item" value={this.state.item} placeholder="enter post" onChange={this.handleChange} />
+                            <Input Cols="30" Rows="4" id="item" type="textarea" name="item" value={this.state.item} placeholder="enter post" onChange={this.handleChange} />
                         </FormGroup>
                         <Button type="submit" color="primary"> Submit </Button>
                     </Form>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import '../style/post.css'
+import { Button, Form, FormGroup, Label, Input, Container,Row, Col } from 'reactstrap';
 import APIURL from '../helpers/enviroment.js';
 
 class PostCreate extends Component {
@@ -38,17 +37,15 @@ class PostCreate extends Component {
     render() {
         return (
             <div>
-                 <h3>Submit a Forum</h3>
             <hr />
-            
+            <Container>
             <Form onSubmit={this.handleSubmit} >
-            
                 <FormGroup>
-                    <Label for="sharedata">Post</Label>
-                    <Input id="item" type="text" name="item" value={this.state.item} placeholder="enter Post" onChange={this.handleChange} />
+                    <Input Cols="30" Rows="4" id="item" type="text" name="item" value={this.state.item} placeholder="enter Post" onChange={this.handleChange} required/>
                 </FormGroup>
                 <Button type="submit" color="primary"> Submit </Button>
             </Form>
+            </Container>
             </div>
         )
     }
